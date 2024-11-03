@@ -1,9 +1,9 @@
 function controls(control){
     if (control == 'back'){
-        uvFrame.contentWindow.history.go(-1);
+        uvFrame.contentWindow.history.back();
     }
     if (control == 'forward'){
-        uvFrame.contentWindow.history.go(1);
+        uvFrame.contentWindow.history.forward();
     }
     if (control == 'refresh'){
         uvFrame.contentWindow.location.reload();

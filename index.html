@@ -13,16 +13,16 @@
       content="#434c5e"
     />
     <meta name="googlebot" content="index, follow, snippet" />
-    <script src="./classwork/cw.bundle.js" defer></script>
-    <script src="./classwork/cw.config.js" defer></script>
-    <script src="./classwork/js/register-sw.js" defer></script>
-    <script src="./classwork/js/search.js" defer></script>
-    <script src="./classwork/js/index.js" defer></script>
+    <script src="./uv/uv.bundle.js" defer></script>
+    <script src="./uv/uv.config.js" defer></script>
+    <script src="./uv/js/register-sw.js" defer></script>
+    <script src="./uv/js/search.js" defer></script>
+    <script src="./uv/js/index.js" defer></script>
   </head>
   <body>
     <div id="before">
       <div class="flex center full flex-column">
-        <h1>ᴜɴᴛɪᴛʟᴇᴅ ᴘʀᴏxʏ ꜱᴇʀᴠɪᴄᴇ</h1>
+        <h1>Untitled Proxy Service</h1>
         <div class="margin-small"></div>
         <form id="uv-form" class="flex-center">
           <input
@@ -34,8 +34,7 @@
             style="border: 3px solid black; padding: 10px; border-radius: 25px;" 
             id="uv-address" 
             type="text" 
-            placeholder="Search the web"
-            autocomplete="off"
+            placeholder="Search the web freely"
           />
         </form>
         <br>
@@ -46,7 +45,7 @@
       </div>
     </div>
     <div hidden="true" id="uvDiv" class="static full z-index">
-      <div class="flex center flex-grow" style="background-color: blueviolet;">
+      <div class="flex cente flex-grow" style="background-color: blueviolet;">
         <img src="./imgs/home.svg" onclick="controls('home')">
         <img src="./imgs/back.svg" onclick="controls('back')">
         <img src="./imgs/forward.svg" onclick="controls('forward')">
