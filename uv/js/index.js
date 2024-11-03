@@ -19,9 +19,6 @@ const error = document.getElementById("uv-error");
  * @type {HTMLPreElement}
  */
 const errorCode = document.getElementById("uv-error-code");
-const uvFrame = document.getElementById("uvIframe")
-const uvDiv = document.getElementById("uvDiv")
-const before = document.getElementById("before")
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -35,7 +32,5 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  uvFrame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
-  uvDiv.hidden = false
-  before.hidden = true
+  window.location = __uv$config.prefix + __uv$config.encodeUrl(url);
 });

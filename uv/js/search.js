@@ -5,24 +5,7 @@
  * @param {string} template Template for a search query.
  * @returns {string} Fully qualified URL
  */
-
-let badThings = [
-  'porn',
-  'hentai',
-  'xxx',
-  'onlyfans',
-  'sex',
-  'nsfw',
-  'r34',
-  'rule34'
-]
-
 function search(input, template) {
-  for(let i = 0; i < badThings.length; i++){
-    if (String(input).includes(badThings[i])){
-      window.open("./ayo.html")
-    }
-  }
   try {
     // input is a valid URL:
     // eg: https://example.com, https://example.com/test?q=param

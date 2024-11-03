@@ -1,5 +1,6 @@
+
 self.__uv$config = {
-    prefix: '/uv/',
+    prefix: '/uv/service/',
 
     /* Bare server URL */ 
     bare: 'https://dw5pdmvyc2fs-dw5ibg9ja2vy.io2lx7.workers.dev/',
