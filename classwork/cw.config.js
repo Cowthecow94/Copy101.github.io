@@ -6,9 +6,9 @@ self.__uv$config = {
     
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
-    handler: './classwork/cw.handler.js',
-    client: './classwork/cw.client.js',
-    bundle: './classwork/cw.bundle.js',
-    config: './classwork/cw.config.js',
-    sw: './classwork/cw.sw.js',
+    handler: '/classwork/cw.handler.js',
+    client: '/classwork/cw.client.js',
+    bundle: '/classwork/cw.bundle.js',
+    config: '/classwork/cw.config.js',
+    sw: '/classwork/cw.sw.js',
 };
