@@ -10,7 +10,7 @@ function controls(control){
     }
     if (control == 'home'){
         uvDiv.hidden = true;
-        before.hidden = false;
+        beforeDiv.hidden = false;
         uvFrame.src = "";
     }
 }

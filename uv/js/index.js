@@ -20,6 +20,10 @@ const error = document.getElementById("uv-error");
  */
 const errorCode = document.getElementById("uv-error-code");
 
+const uvDiv = document.getElementById('uvDiv');
+const beforeDiv = document.getElementById('beforeDiv');
+const uvFrame = document.getElementById('uvIframe');
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -32,5 +36,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   const url = search(address.value, searchEngine.value);
-  window.location = __uv$config.prefix + __uv$config.encodeUrl(url);
+  uvDiv.hidden = false
+  beforeDiv.hidden = true
+  uvFrame.src = __uv$config.prefix + __uv$config.encodeUrl(url);
 });
