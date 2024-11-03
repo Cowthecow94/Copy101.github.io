@@ -1,0 +1,26 @@
+<title>
+    THIS GUY LOOKED UP PORN ON HIS SCHOOL COMPUTER
+
+</title>
+<h1 style='font-size:100px;'>
+    THIS GUY LOOKED UP PORN ON HIS SCHOOL COMPUTER
+</h1>
+
+<img src="./imgs/skull.png">
+<img src="./imgs/skull.png">
+<img src="./imgs/skull.png">
+<img src="./imgs/skull.png">
+<img src="./imgs/skull.png">
+<img src="./imgs/skull.png">
+
+<script>
+var num = 500;
+done = false;
+x = window.location.href;
+for (var i = 1; i <= num; i++) {
+    history.pushState(0, 0, i == num ? x : i.toString());
+    if (i == num) {
+        done = true
+    }
+}
+</script>

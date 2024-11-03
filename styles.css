@@ -1,0 +1,74 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+}
+
+input::placeholder{
+    font-size: 16px;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.static{
+    position: static;
+}
+
+.full{
+    width: 100vw;
+    height: 100vh;
+}
+
+.fill-percent{
+    width: 100%;
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.z-index{
+    z-index: 999;
+}
+
+.margin-small{
+    margin: 7px;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.float-right{
+    float: right;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html style="background-color: white;">
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <script src="./classwork/cw.bundle.js" defer></script>
+    <script src="./classwork/cw.config.js" defer></script>
+    <script src="./classwork/js/register-sw.js" defer></script>
+    <script src="./classwork/js/search.js" defer></script>
+    <script src="./classwork/js/index.js" defer></script>
+  </head>
+  <body>
+    <div id="before">
+      <div class="flex center full flex-column">
+        <h1>ᴜɴᴛɪᴛʟᴇᴅ ᴘʀᴏxʏ ꜱᴇʀᴠɪᴄᴇ</h1>
+        <div class="margin-small"></div>
+        <form id="uv-form" class="flex-center">
+          <input
+            id="uv-search-engine"
+            value="https://www.google.com/search?q=%s"
+            type="hidden"
+          />
+          <input
+            style="border: 3px solid black; padding: 10px; border-radius: 25px;" 
+            id="uv-address" 
+            type="text" 
+            placeholder="Search the web"
+            autocomplete="off"
+          />
+        </form>
+        <br>
+        <div class="desc left-margin" style="height: 50px; width: 20%;">
+          <p id="uv-error"></p>
+          <pre id="uv-error-code"></pre>
+        </div>
+      </div>
+    </div>
+    <div hidden="true" id="uvDiv" class="static full z-index">
+      <div class="flex center flex-grow" style="background-color: blueviolet;">
+        <img src="./imgs/home.svg" onclick="controls('home')">
+        <img src="./imgs/back.svg" onclick="controls('back')">
+        <img src="./imgs/forward.svg" onclick="controls('forward')">
+        <img src="./imgs/refresh.svg" onclick="controls('refresh')">
+      </div>
+      <iframe class="fill-percent" id="uvIframe"></iframe>
+    </div>
+  </body>
+<script src="./controls.js"></script>
+<script src="./utilities.js"></script>
+</html>
